@@ -6,6 +6,7 @@
 // Reset and dependencies
 @import "bootstrap/normalize";
 @import "bootstrap/print";
+@import "bootstrap/pace-loader";
 @import "bootstrap/glyphicons";
 
 // Core CSS
@@ -54,5 +55,4 @@
 //Third Party
 @import "bootstrap/custom";
 @import "bootstrap/animate";
-@import "bootstrap/pace-loader";
 @import "bootstrap/responsive-queries";
