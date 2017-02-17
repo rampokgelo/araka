@@ -3,7 +3,7 @@
 
 <head>
     <title>Araka</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon" /> -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/araka-style.css" media="screen,projection" />
@@ -12,63 +12,158 @@
 
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbar" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#"><img src="images/logo-araka.png">Araka Mega Utama</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
+            <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="people.html">our people</a></li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <!-- JS -->
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <div class="wrapper">
+        <section class="">
+            <div class="parallax-img" data-parallax="scroll" data-image-src="images/jumbo-home.jpg">
+                <div class="container">
+                    <div class="jumbotron obj-center-pos">
+                        <h1>Welcome</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec vero sum nescius esse utilitatem in historia, non modo voluptatem. Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Apud imperitos tum illa dicta sunt, aliquid etiam coronae datum; Duo Reges: constructio interrete. Conclusum est enim contra Cyrenaicos satis acute, nihil ad Epicurum. Et si turpitudinem fugimus in statu et motu corporis, quid est cur pulchritudinem non sequamur? </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <div class="container">
+                <div class="obj-anim obj-anim-opening animated">
+                    <div class="jumbotron text-center">
+                        <h2>Hello, world!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec vero sum nescius esse utilitatem in historia, non modo voluptatem. Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Apud imperitos tum illa dicta sunt, aliquid etiam coronae datum; Duo Reges: constructio interrete. Conclusum est enim contra Cyrenaicos satis acute, nihil ad Epicurum. Et si turpitudinem fugimus in statu et motu corporis, quid est cur pulchritudinem non sequamur? </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-part">
+            <div class="parallax-img" data-parallax="scroll" data-image-src="images/office.jpg"></div>
+        </section>
+        <section class="content-part">
+            <div class="container">
+                <div class="obj-anim obj-anim-mission animated">
+                    <h3>Mission</h3>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center">
+                                <p><img src="images/mission-icon.jpg" class="img-responsive inblock"></p>
+                                <p>Ea possunt paria non esse. Ne in odium veniam, si amicum destitero tueri. Semper enim ex eo, quod maximas partes continet latissimeque funditur, tota res appellatur. </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center">
+                                <p><img src="images/mission-icon.jpg" class="img-responsive inblock"></p>
+                                <p>Ea possunt paria non esse. Ne in odium veniam, si amicum destitero tueri. Semper enim ex eo, quod maximas partes continet latissimeque funditur, tota res appellatur. </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center">
+                                <p><img src="images/mission-icon.jpg" class="img-responsive inblock"></p>
+                                <p>Ea possunt paria non esse. Ne in odium veniam, si amicum destitero tueri. Semper enim ex eo, quod maximas partes continet latissimeque funditur, tota res appellatur. </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center">
+                                <p><img src="images/mission-icon.jpg" class="img-responsive inblock"></p>
+                                <p>Ea possunt paria non esse. Ne in odium veniam, si amicum destitero tueri. Semper enim ex eo, quod maximas partes continet latissimeque funditur, tota res appellatur. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="content-part">
+            <div class="parallax-img" data-parallax="scroll" data-image-src="images/initiatives.jpg">
+                <div class="desc-right">
+                    <div class="obj-anim obj-anim-init animated">
+                        <br>
+                        <br>
+                        <div class="text-center">
+                            <h3>ARAKA Initiatives</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec vero sum nescius esse utilitatem in historia, non modo voluptatem. Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Apud imperitos tum illa dicta sunt, aliquid etiam coronae datum; Duo Reges: constructio interrete. Conclusum est enim contra Cyrenaicos satis acute, nihil ad Epicurum. Et si turpitudinem fugimus in statu et motu corporis, quid est cur pulchritudinem non sequamur. </p>
+                            <h3>Upcoming Initiatives</h3>
+                            <p>Lorem ipsum dolor sit amet
+                                <br>onsectetur adipiscing elit
+                                <br>Nec vero sum nescius esse utilitatem in historia </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-part">
+            <div class="container">
+                <div class="obj-anim obj-anim-client animated">
+                    <h3>Our Client</h3>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center">
+                                <p><img src="images/mission-icon.jpg" class="img-responsive inblock"></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center">
+                                <p><img src="images/mission-icon.jpg" class="img-responsive inblock"></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center">
+                                <p><img src="images/mission-icon.jpg" class="img-responsive inblock"></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center">
+                                <p><img src="images/mission-icon.jpg" class="img-responsive inblock"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                    ARAKA MEGA UTAMA
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
+                    Kemang Swatama
+                    <br> Blok A3 No. 32 Kel. Kali Baru Kec. Cilodong
+                    <br> Depok
+                    <br>
+                    <br> T: 021-227 08090
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <small>&copy; PT. ARAKA MEGA UTAMA</small>
+                </div>
+            </div>
+        </footer>
+        <!-- <div class="option" style="background: black;padding: 10px;">asdasdsa</div> -->
+        <!-- JS -->
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/pace.min.js"></script>
+        <script type="text/javascript" src="js/parallax.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
 </html>

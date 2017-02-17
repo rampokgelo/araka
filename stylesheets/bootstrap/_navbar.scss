@@ -162,11 +162,12 @@
 
 .navbar-brand {
   float: left;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
-  font-size: $font-size-large;
+  // padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  // font-size: $font-size-large;
+  padding:5px ($grid-gutter-width /4);
   line-height: $line-height-computed;
   height: $navbar-height;
-
+  font: 0/0 a;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -174,6 +175,7 @@
 
   > img {
     display: block;
+    max-width: 250px;
   }
 
   @media (min-width: $grid-float-breakpoint) {
