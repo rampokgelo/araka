@@ -1,12 +1,48 @@
 .wrapper {
     padding-top: 51px;
+    @media (max-width: $screen-phone) {
+        padding-top: 66px;
+    }
 }
 
 .posrel {
     position: relative;
 }
-.inblock{
-	display: inline-block;
+
+.inblock {
+    display: inline-block;
+}
+.bg-cover{
+	@include bg-cover;
+}
+.color-inverse {
+    color: #fff;
+}
+.bg-gray-light{
+	background-color:$gray-lighter;
+}
+.bg-mapping{
+	background-color:#211f20;
+}
+.abs-center{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+}
+.item-abs{
+	position:absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	&.item-bottom{
+		bottom:0;
+	}
+	&.item-top{
+		top:0;
+	}
 }
 .obj-center-pos {
     position: absolute;
@@ -28,25 +64,62 @@ footer {
     min-height: calc(100vh - 130px);
     background: transparent;
     >.container {
-        min-height: calc(100vh - 130px);
+        // min-height: calc(100vh - 130px);
         position: relative;
         .jumbotron {
+            position: relative;
+            padding-top: 90px;
             z-index: 99;
             text-align: center;
             >h1 {
                 font-weight: 700;
             }
+            @media (max-width: $screen-phone) {
+                padding-top: $grid-gutter-width / 2;
+            }
         }
     }
     >.desc-right {
-        padding: $grid-gutter-width ($grid-gutter-width * 1.5);
+        padding: ($grid-gutter-width * 2) ($grid-gutter-width * 1.5);
         position: absolute;
         right: 0;
         top: 0;
         bottom: 0;
         z-index: 99;
-        width: 500px;
+        width: 700px;
         background: #fff;
+        @media (max-width: $screen-phone) {
+            position: relative;
+            padding: $grid-gutter-width / 2;
+            width: auto;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.75);
+        }
+        &.desc-transparent {
+            background: transparent;
+        }
+    }
+    >.desc-left {
+        padding: ($grid-gutter-width * 2) ($grid-gutter-width * 1.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 99;
+        width: 700px;
+        background: transparent;
+        @media (max-width: $screen-phone) {
+            position: relative;
+            padding: $grid-gutter-width / 2;
+            width: auto;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.75);
+        }
+    }
+    @media (max-width: $screen-phone) {
+        >.container {
+            min-height: auto;
+        }
     }
 }
 
@@ -54,7 +127,19 @@ footer {
     position: relative;
     padding-top: $grid-gutter-width;
     padding-bottom: $grid-gutter-width;
+    @media (max-width: $screen-phone) {
+        padding-top: $grid-gutter-width / 2;
+        padding-bottom: $grid-gutter-width / 2;
+    }
 }
-.obj-anim{
-	opacity:0;
+
+.obj-anim {
+    opacity: 0;
+}
+.side-full{
+	position:relative;
+	height:400px;
+	.side-image{
+		@extend .abs-center;
+	}
 }
