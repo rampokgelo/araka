@@ -12,11 +12,18 @@
 .inblock {
     display: inline-block;
 }
-
+.margbot-none{
+    margin-bottom: 0 !important;
+}
+.padd-bot-5{
+    padding-bottom:$grid-gutter-width / 4 !important;
+}
 .bg-cover {
     @include bg-cover;
 }
-
+.bg-white{
+    background-color:#fff;
+}
 .color-inverse {
     color: #fff;
 }
